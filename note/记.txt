@@ -1,0 +1,152 @@
+
+private重载调自己,不用用户写
+
+return a==0;
+
+特殊情况,自己调自己  this.add(size,e);
+
+Arrays.sort(arr1);
+
+Alt+Shift+M  提取方法
+
+r.nextInt(51)+30;  30-80之间的随机数
+
+"三个字".length 为3
+
+DriverManager.getConnection("jdbc:mysql://localhost:3306?serverTimezone=GMT%2B8&useSSL=false","root","123");
+
+byte的取值范围为-128~127，占用1个字节（-2的7次方到2的7次方-1） 
+
+short的取值范围为-32768~32767，占用2个字节（-2的15次方到2的15次方-1）
+
+int的取值范围为（-2147483648~2147483647），占用4个字节（-2的31次方到2的31次方-1）
+
+long的取值范围为（-9223372036854774808~9223372036854774807），占用8个字节（-2的63次方到2的63次方-1）
+
+1位=1比特；1字=2字节；1字节=8位；1字=16位。位的单位是b
+
+outloop: //outloop这个标示是可以自定义的比如outloop1,ol2,out5
+        for (int i = 0; i < 10; i++) {         
+            for (int j = 0; j < 10; j++) {
+                System.out.println(i+":"+j);
+                if(0==j%2) 
+                    break outloop; //如果是双数，结束外部循环
+
+	 类内部   本包   子类   外部包
+public	     √         √         √         √
+protected      √         √         √
+default           √         √
+private           √
+
+next（）一定要读取到有效字符后才可以结束输入，对输入有效字符之前遇到的空格键、Tab键或Enter键等结束符，next（）方法会自动将其去掉，而nextLine（）方法的结束符只是Enter键
+
+遍历,先中后,指的是节点
+
+String.valueOf   数字转字符串
+
+Integer.parseInt(str)
+
+二维数组可能是反的
+
+iconfont.cn
+
+局部变量没有默认值,成员变量有,
+
+split("\\.")
+
+''ASCII码大于数字
+
+ create创建 | alter修改 | drop删除 | show | 显示 | use 使用
+insert into 增加数据 | delete from 删除数据 |update 表名 set 修改数据 select
+
+Arrays.toString()
+
+jQ1.7->on代替live
+$(document).on("click","dt",function(){}); 
+
+<a th:href="'javascript:a(\''+${B}+'\')'">点我</a>
+
+iframe a标签整个跳转 target="_top"
+
+drawString从字的左下角开始的 
+
+random.nextInt(21)-10  -10-10随机数
+
+ <bean id="beanList" class="java.util.ArrayList">
+             <constructor-arg index="0">
+                     <list>
+                        <value>1</value>
+                         <value>2</value>
+                     </list>
+            </constructor-arg>
+         </bean>
+
+var receiveAddressId=$("input[name='deliveryAddress']:checked").val();
+
+final修饰变量 引用指向地址不能变,但是地址的对象能变,基本数据类型就不能变
+
+null是没有地址
+
+""是有地址但是里面的内容是空的
+
+类的private方法会隐式地被指定为final方法
+
+
+
+linux
+
+systemctl stop NetworkManager        重启网卡
+systemctl disable NetworkManager
+
+
+yum -y install gcc gcc-c++ kernel-devel  安装gcc
+
+input type是file form必须是post enctype="multipart/Form-data"
+#numbers.formatDecimal(<值>,<小数点左边的占位>,<小数点右边的保留位>)
+
+项目
+<packaging>pom</packaging> 
+import tk.mybatis.spring.annotation.MapperScan;
+Thymeleaf
+dubbo @service @reference注解
+elasticsearch配了集群就得全打开
+application类得拿出来 
+mumushop.com==localhost 但是是两个拿不到cookie
+rpc主键返回策略失效,
+redirect:/http:// 斜杠根目录前面跟一堆东西
+@RunWith(SpringRunner.class) 单元测试
+
+
+
+面试
+冒泡排序，就是典型的O(n^2)的算法 n个排序得扫描n*n次
+二分查找就是O(logn)的算法
+归并排序就是O(nlogn)
+ 哈希算法就是典型的O(1)
+
+400——错误请求，如语法错误
+401——请求授权失败
+402——保留有效ChargeTo头响应
+403——请求不允许
+404——没有发现文件、查询或URl
+405——用户在Request-Line字段定义的方法不允许
+406——根据用户发送的Accept拖，请求资源不可访问
+407——类似401，用户必须首先在代理服务器上得到授权
+408——客户端没有在用户指定的饿时间内完成请求
+409——对当前资源状态，请求不能完成
+410——服务器上不再有此资源且无进一步的参考地址
+411——服务器拒绝用户定义的Content-Length属性请求
+412——一个或多个请求头字段在当前请求中错误
+413——请求的资源大于服务器允许的大小
+414——请求的资源URL长于服务器允许的长度
+415——请求资源不支持请求项目格式
+416——请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段
+417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求
+—————
+500——服务器产生内部错误
+501——服务器不支持请求的函数
+502——服务器暂时不可用，有时是为了防止发生系统过载
+503——服务器过载或暂停维修
+504——关口过载，服务器使用另一个关口或服务来响应用户，等待时间设定值较长
+505——服务器不支持或拒绝支请求头中指定的HTTP版本
+
